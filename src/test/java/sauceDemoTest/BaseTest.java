@@ -1,8 +1,8 @@
-package sauceDemoTest.tests;
+package sauceDemoTest;
 
 import java.time.Duration;
 
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,7 +20,7 @@ public class BaseTest
     protected WebDriver driver;
     protected WebDriverWait wait;
 
-    @Before
+    @BeforeEach
     public void prepareFixture()
     {
         ChromeOptions chromeOptions = new ChromeOptions();

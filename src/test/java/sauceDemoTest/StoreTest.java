@@ -1,7 +1,7 @@
-package sauceDemoTest.tests;
+package sauceDemoTest;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import sauceDemoTest.TestUtils.RandomStringGenerator;
 import sauceDemoTest.forms.LoginForm;
@@ -26,7 +26,7 @@ public class StoreTest extends BaseTest
     private CartPage cartPage;
     private OrderForm orderForm;
 
-    @Before
+    @BeforeEach
     public void beforeTests()
     {
         signupForm = new SignupForm(driver, wait);
